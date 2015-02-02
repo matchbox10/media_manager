@@ -17,7 +17,7 @@ include_once 'php/controller.php';
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Media Manager B2B Pull</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -30,8 +30,16 @@ include_once 'php/controller.php';
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+<div class="container">
+    <div class="row">
+      <div class="starter-template">
+        <h1>Media Manager B2B Pull</h1>
+        <p class="lead">This is where we can pull data from third party sites<br>
+        directly into Media Manager.</p>
+      </div>
+        <form></form>
+    </div>
+</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->

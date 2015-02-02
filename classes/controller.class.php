@@ -17,6 +17,18 @@ class apiControl
         echo "Using the toString method: ";
         return $this->getConfig();
     }
+    
+    public function getClient($client) {
+        $clientDataFull = $this->getConfig();
+        $clientData = $clientDataFull->clients->$client;
+        return $clientData;
+    }
+    
+    public function getClientList() {
+        $clientDataFull = $this->getConfig();
+        $clientData = $clientDataFull->clients;
+        return $clientData;
+    }
 }
 
 class apiSend extends apiControl {
@@ -26,10 +38,17 @@ class apiSend extends apiControl {
         print "</pre>";
     }
 
-    public function callProtected()
+    public function callProtectedAll()
     {
         return $this->getConfig();
     }
+    public function callProtectedListClients() {
+        foreach ( $this->getClientList() as $key => $value) {
+            $data[] = $key;
+        }
+        return $data;
+    }
+    
 }
 
 ?>

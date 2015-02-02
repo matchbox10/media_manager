@@ -3,10 +3,10 @@
 // Create a new object of client api data
 $clientApis = new apiSend;
 
-$validate =  $clientApis->callProtected();
+$validate =  $clientApis->callProtectedListClients();
 
 $clientApis->pr($validate);
 
-foreach ($validate->clients as $key => $value) {
+foreach ($validate as $key => $value) {
     echo $key;
 }
