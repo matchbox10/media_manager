@@ -1,0 +1,20 @@
+{
+    "name": "Mark's multiple media, Media Manager manager",
+    "clients": {
+        "youtube_v3": {
+            "description": "Connection to YouTube's V3 API",
+            "authentication": {
+                "api_key": "1234"
+            }
+        
+        },
+        "vimeo": {
+            "description": "Connection to Vimeo's V3 API",
+            "authentication": {
+                "client_id": "1234",
+                "client_secret": "1234"
+            }
+        }
+    }
+    
+}
