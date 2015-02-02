@@ -18,4 +18,9 @@
 
 include_once 'classes/controller.class.php';
 
+// Create a new object of client api data
+$clientApis = new apiControl;
+
+print_r($clientApis->get_api_data);
+
 ?>
