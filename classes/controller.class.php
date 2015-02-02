@@ -8,9 +8,27 @@
 
 class apiControl
 {
-    public function get_api_data() {
+    public function getConfig() {
         $data = file_get_contents('data/config.json');
         return json_decode($data);
+    }
+    
+    public function __get_api_data() {
+        echo "Using the toString method: ";
+        return $this->getConfig();
+    }
+}
+
+class apiSend extends apiControl {
+    public function pr($data) {
+        print "<pre>";
+        print_r($data);
+        print "</pre>";
+    }
+
+    public function callProtected()
+    {
+        return $this->getConfig();
     }
 }
 
